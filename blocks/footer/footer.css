@@ -1,20 +1,128 @@
+/* footer — values from source footer.experiencefragment */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
-}
-
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  margin-top: 40px;
+  border-top: 1px solid #434c4a;
+  padding: 12px 20px;
+  color: var(--text-color);
+  font-family: var(--body-font-family);
 }
 
 footer .footer p {
   margin: 0;
 }
 
+footer .footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer li {
+  line-height: 19px;
+}
+
+footer .footer a:any-link {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+footer .footer a:hover,
+footer .footer a:focus-visible {
+  text-decoration: underline;
+  text-decoration-color: var(--link-color);
+}
+
+/* brand row: logo + social icons */
+footer .footer-brand {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 78px;
+}
+
+footer .footer-brand img {
+  display: block;
+}
+
+footer .footer-brand > p img {
+  width: 288px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+footer .footer-brand ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+footer .footer .footer-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+}
+
+footer .footer .footer-icon-link img {
+  max-width: 20px;
+  height: auto;
+}
+
+/* primary links */
+footer .footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 8px;
+  margin: 25px 0;
+}
+
+footer .footer-nav a:any-link {
+  font-family: var(--text-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.01em;
+}
+
+/* legal links */
+footer .footer-legal ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 34px;
+  padding: 10px;
+}
+
+footer .footer-legal a:any-link,
+footer .footer-copyright p {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.01em;
+  color: #aeb7b5;
+}
+
+footer .footer-legal a:any-link {
+  font-family: var(--text-font-family);
+}
+
+/* copyright */
+footer .footer-copyright {
+  margin-top: 10px;
+  text-align: center;
+}
+
 @media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+  footer {
+    padding: 12px 40px;
   }
 }
