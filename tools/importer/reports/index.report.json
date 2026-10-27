@@ -1,0 +1,17 @@
+{
+  "status": "success",
+  "url": "https://www.euronpro.com",
+  "path": "index",
+  "timestamp": "2026-10-27T08:55:26.175Z",
+  "title": "EurON Pro - Home",
+  "template": "home",
+  "blocks": [
+    "hero-split",
+    "hero-split",
+    "cards-icon-feature",
+    "cards-logos",
+    "carousel-coverflow",
+    "cards-text",
+    "accordion-divided"
+  ]
+}

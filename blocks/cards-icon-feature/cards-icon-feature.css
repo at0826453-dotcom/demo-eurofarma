@@ -1,0 +1,100 @@
+/* Source: .pc-heroContent__heroBulletWrapper (euronpro.com) */
+.cards-icon-feature {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 60px;
+  color: var(--text-color);
+}
+
+.cards-icon-feature > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center;
+  gap: 30px;
+}
+
+.cards-icon-feature > ul > li {
+  display: flex;
+  gap: 8px;
+  flex: 1 1 0%;
+  min-width: 270px;
+  max-width: 320px;
+}
+
+.cards-icon-feature .cards-icon-feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 59px;
+  width: 59px;
+  min-width: 59px;
+  height: 59px;
+  background-color: rgb(67 76 74);
+  border-radius: 100%;
+  line-height: 0;
+}
+
+.cards-icon-feature .cards-icon-feature-icon picture {
+  display: contents;
+}
+
+.cards-icon-feature .cards-icon-feature-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.cards-icon-feature .cards-icon-feature-body {
+  width: 100%;
+  font-family: var(--text-font-family);
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  color: var(--text-muted-color);
+}
+
+.cards-icon-feature .cards-icon-feature-body p {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+  color: inherit;
+}
+
+.cards-icon-feature .cards-icon-feature-body > :first-child {
+  margin-top: 0;
+}
+
+.cards-icon-feature .cards-icon-feature-body > :last-child {
+  margin-bottom: 0;
+}
+
+/* Emphasis (source: span.--greenColor) - author with bold/italic */
+.cards-icon-feature .cards-icon-feature-body strong,
+.cards-icon-feature .cards-icon-feature-body em {
+  font-style: normal;
+  font-weight: inherit;
+  color: var(--accent-color);
+}
+
+@media (width >= 640px) and (width <= 1024px) {
+  .cards-icon-feature {
+    padding-top: 0;
+  }
+}
+
+@media (width > 1240px) {
+  .cards-icon-feature > ul {
+    flex-wrap: nowrap;
+    place-content: normal;
+    gap: 60px;
+  }
+
+  .cards-icon-feature > ul > li {
+    min-width: 0;
+    max-width: none;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "variantName": "Cards Icon Feature",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Row of short feature bullets, each a small round icon beside a short text",
+    "layout": "horizontal row that wraps; icon inline left of text",
+    "chrome": "none"
+  },
+  "contentPattern": {
+    "structure": "icon image | short text (rich text allowed)",
+    "rows": [
+      [
+        "Icon image",
+        "Short text"
+      ]
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [
+    "seq-1-2"
+  ],
+  "usage": "Feature bullets below the homepage hero.",
+  "reuseGuidance": "Use for icon + one-line benefit lists. For larger cards with images or titles use cards."
+}

@@ -1,0 +1,133 @@
+/* cards-text: swipeable text cards (1 per view on mobile, 3 per view on desktop) */
+.cards-text {
+  max-width: 403px;
+  margin: 0 auto;
+}
+
+.cards-text > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.cards-text > ul > li {
+  flex: 0 0 100%;
+  min-width: 0;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  height: 331px;
+  border-radius: 20px;
+  background-color: var(--surface-hover-color);
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.cards-text .cards-text-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 32px 24px 48px;
+}
+
+.cards-text .cards-text-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  flex-shrink: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 53px;
+  margin: 0 0 16px;
+  font-family: var(--heading-font-family);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+.cards-text .cards-text-content {
+  min-height: 0;
+  max-height: 192px;
+  margin-top: 16px;
+  overflow: hidden auto;
+  font-family: var(--text-font-family);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.18px;
+  color: var(--text-color);
+  scrollbar-width: thin;
+  scrollbar-color: var(--surface-color) #434c4a;
+}
+
+/* decorative quote mark above the description */
+.cards-text .cards-text-content::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('comma.svg') center / contain no-repeat;
+}
+
+.cards-text .cards-text-content p {
+  margin: 0;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.cards-text .cards-text-content > * + p {
+  margin-top: 16px;
+}
+
+/* pagination bullets (only when cards overflow) */
+.cards-text .cards-text-pagination {
+  display: none;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.cards-text.cards-text-scrollable .cards-text-pagination {
+  display: flex;
+}
+
+.cards-text .cards-text-dot {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 100%;
+  background-color: #434c4a;
+  cursor: pointer;
+}
+
+.cards-text .cards-text-dot.active {
+  background-color: var(--accent-light-color);
+  cursor: default;
+}
+
+@media (width >= 481px) {
+  .cards-text .cards-text-pagination {
+    margin-top: 32px;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-text {
+    max-width: none;
+  }
+
+  .cards-text > ul > li {
+    flex-basis: calc((100% - 32px) / 3);
+  }
+}

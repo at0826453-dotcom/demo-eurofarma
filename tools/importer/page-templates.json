@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "projectType": "da"
+  },
+  "templates": [
+    {
+      "name": "home",
+      "urls": [
+        "https://www.euronpro.com"
+      ],
+      "representativeUrl": "https://www.euronpro.com",
+      "description": "Euronpro home page: hero with feature bullets, partner logos, solutions coverflow carousel, sign-up banner, cardiometabolic update cards, FAQ accordion and contact band",
+      "urlPattern": "/",
+      "blocks": [
+        {
+          "name": "hero-split",
+          "instances": [
+            ".pc-heroContent__upperContent",
+            ".pc-subscriptionContainer"
+          ]
+        },
+        {
+          "name": "cards-icon-feature",
+          "instances": [
+            ".pc-heroContent__heroBulletWrapper"
+          ]
+        },
+        {
+          "name": "cards-logos",
+          "instances": [
+            ".cmp-partner-container__logos"
+          ]
+        },
+        {
+          "name": "carousel-coverflow",
+          "instances": [
+            ".cmp-products-carousel"
+          ]
+        },
+        {
+          "name": "cards-text",
+          "instances": [
+            ".cmp-carousel-cards__wrapper"
+          ]
+        },
+        {
+          "name": "accordion-divided",
+          "instances": [
+            ".cmp-faq-container .cmp-accordion"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1",
+          "name": "Hero",
+          "selector": [
+            ".herocontent",
+            ".pc-heroContent"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-split",
+            "cards-icon-feature"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2",
+          "name": "Partnership logos",
+          "selector": [
+            ".partnercontainer",
+            ".cmp-partner-container"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-logos"
+          ],
+          "defaultContent": [
+            ".cmp-partner-container__title"
+          ]
+        },
+        {
+          "id": "section-3",
+          "name": "Solutions carousel",
+          "selector": [
+            ".productscontainer",
+            ".cmp-products-container"
+          ],
+          "style": null,
+          "blocks": [
+            "carousel-coverflow"
+          ],
+          "defaultContent": [
+            ".cmp-products-container__title"
+          ]
+        },
+        {
+          "id": "section-4",
+          "name": "Subscription banner",
+          "selector": [
+            ".subscriptioncontainer",
+            ".pc-subscriptionContainer"
+          ],
+          "style": null,
+          "blocks": [
+            "hero-split"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5",
+          "name": "Cardiometabolic updates",
+          "selector": [
+            ".carouselcards",
+            ".cmp-carousel-cards"
+          ],
+          "style": null,
+          "blocks": [
+            "cards-text"
+          ],
+          "defaultContent": [
+            ".cmp-carousel-cards__title"
+          ]
+        },
+        {
+          "id": "section-6",
+          "name": "FAQ",
+          "selector": [
+            ".faqcontainer",
+            ".cmp-faq-container"
+          ],
+          "style": null,
+          "blocks": [
+            "accordion-divided"
+          ],
+          "defaultContent": [
+            ".cmp-faq-container__title"
+          ]
+        },
+        {
+          "id": "section-7",
+          "name": "Contact",
+          "selector": [
+            ".contactcontainer",
+            ".pc-contactContainer"
+          ],
+          "style": "mint",
+          "blocks": [],
+          "defaultContent": [
+            ".pc-contactContainer__contactWrapper--info"
+          ]
+        }
+      ]
+    }
+  ]
+}

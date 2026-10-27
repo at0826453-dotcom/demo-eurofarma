@@ -1,0 +1,11 @@
+{
+  "type": "da",
+  "sites": {
+    "demo-eurofarma": {
+      "previewOrg": "at0826453-dotcom",
+      "previewSite": "demo-eurofarma",
+      "contentHostUrl": "https://content.da.live/at0826453-dotcom/demo-eurofarma/",
+      "libraryUrl": "https://main--sta-boilerplate--aemdemos.aem.page/tools/sidekick/library.json"
+    }
+  }
+}

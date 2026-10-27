@@ -1,0 +1,29 @@
+{
+  "variantName": "Hero Split",
+  "baseBlock": "hero",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Top banner with a text column (eyebrow, heading, description, CTAs) beside a foreground device image, over an optional full-bleed background image",
+    "layout": "two columns on desktop (text left, image right), stacked on mobile",
+    "background": "optional full-bleed background image"
+  },
+  "contentPattern": {
+    "structure": "row 1 (optional): background image only; row 2: eyebrow paragraph, heading, description, CTA link(s), plus an optional side image in the same cell or a second cell",
+    "rows": [
+      [
+        "Background image (optional)"
+      ],
+      [
+        "Eyebrow paragraph, heading, description, CTA link(s)",
+        "Side image (optional)"
+      ]
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [
+    "seq-1-1",
+    "seq-4-1"
+  ],
+  "usage": "Homepage hero and the subscription banner on https://www.euronpro.com.",
+  "reuseGuidance": "Use for any banner with text on one side and a product/device image on the other. A single CTA or missing background image are supported without a new variant."
+}

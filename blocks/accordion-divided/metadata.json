@@ -1,0 +1,25 @@
+{
+  "variantName": "Accordion Divided",
+  "baseBlock": "accordion",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "FAQ list of expandable question/answer items",
+    "layout": "full-width rows separated by divider lines, circled chevron on the right",
+    "interaction": "native details/summary expand and collapse"
+  },
+  "contentPattern": {
+    "structure": "question | answer content",
+    "rows": [
+      [
+        "Question",
+        "Answer content"
+      ]
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [
+    "seq-6-2"
+  ],
+  "usage": "FAQ section (Perguntas Frequentes).",
+  "reuseGuidance": "Use for any question/answer or expand/collapse list."
+}

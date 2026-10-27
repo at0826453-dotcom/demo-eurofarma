@@ -1,0 +1,59 @@
+/* Brand tokens extracted from https://www.euronpro.com */
+:root {
+  /* colors */
+  --background-color: #131515;
+  --surface-color: #212625;
+  --surface-hover-color: #303635;
+  --light-color: #85e0cb;
+  --dark-color: #131515;
+  --text-color: #f1f3f3;
+  --text-muted-color: #e4e7e6;
+  --text-on-light-color: #212625;
+  --accent-color: #33cca7;
+  --accent-light-color: #85e0cb;
+  --link-color: #33cca7;
+  --link-hover-color: #85e0cb;
+
+  /* fonts */
+  --body-font-family: quicksand, quicksand-fallback, system-ui, sans-serif;
+  --heading-font-family: quicksand, quicksand-fallback, system-ui, sans-serif;
+  --text-font-family: 'Open Sans', open-sans-fallback, sans-serif;
+
+  /* body sizes */
+  --body-font-size-m: 18px;
+  --body-font-size-s: 16px;
+  --body-font-size-xs: 14px;
+
+  /* heading sizes (mobile) */
+  --heading-font-size-xxl: 36px;
+  --heading-font-size-xl: 28px;
+  --heading-font-size-l: 24px;
+  --heading-font-size-m: 20px;
+  --heading-font-size-s: 18px;
+  --heading-font-size-xs: 16px;
+
+  /* buttons */
+  --button-height: 48px;
+  --button-min-width: 240px;
+  --button-radius: 20px;
+  --button-padding-inline: 16px;
+  --button-font-family: var(--text-font-family);
+  --button-font-size: 16px;
+  --button-font-weight: 600;
+
+  /* spacing */
+  --section-padding: 60px;
+  --content-max-width: 1240px;
+  --nav-height: 100px;
+}
+
+@media (width >= 900px) {
+  :root {
+    --heading-font-size-xxl: 48px;
+    --heading-font-size-xl: 32px;
+    --heading-font-size-l: 24px;
+    --heading-font-size-m: 20px;
+    --heading-font-size-s: 18px;
+    --heading-font-size-xs: 16px;
+  }
+}

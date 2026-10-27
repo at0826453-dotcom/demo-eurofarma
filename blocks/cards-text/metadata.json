@@ -1,0 +1,24 @@
+{
+  "variantName": "Cards Text",
+  "baseBlock": "cards",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Rounded text-only boxes with a centered title and a description",
+    "layout": "grid of equal cards, wraps responsively",
+    "chrome": "rounded box, no images"
+  },
+  "contentPattern": {
+    "structure": "title heading and description paragraph(s) in one cell (extra cells are merged)",
+    "rows": [
+      [
+        "Title heading, description"
+      ]
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [
+    "seq-5-2"
+  ],
+  "usage": "Cardiometabolic updates section.",
+  "reuseGuidance": "Use for text-only cards. The decorative quote glyph is styling, not content; do not author it."
+}

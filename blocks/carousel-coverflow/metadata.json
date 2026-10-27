@@ -1,0 +1,24 @@
+{
+  "variantName": "Carousel Coverflow",
+  "baseBlock": "carousel",
+  "canonicalModel": "standalone",
+  "visualCharacteristics": {
+    "purpose": "Coverflow slider with an enlarged center slide and smaller neighbours, each slide a circular illustration, title and description",
+    "navigation": "prev/next arrows, dot pagination, swipe, keyboard arrows, click a neighbour to bring it to center"
+  },
+  "contentPattern": {
+    "structure": "slide image | title heading, description, optional CTA",
+    "rows": [
+      [
+        "Slide image",
+        "Title heading, description, optional CTA"
+      ]
+    ]
+  },
+  "options": [],
+  "memberVariantIds": [
+    "seq-3-2"
+  ],
+  "usage": "Solutions carousel on the homepage.",
+  "reuseGuidance": "Use for 3+ product/solution slides where a centered highlight is wanted. For full-width slides use carousel."
+}
